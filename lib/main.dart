@@ -14,10 +14,10 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(brightness: Brightness.light,
       ),
       initialRoute: '/auth',
-      routes: {
+      routes: { //Навигация
         '/auth': (context) => AuthPage(),
         '/connect': (context) => ConnectPage(),
-        '/notif' : (context) => NotificationPage(),
+        '/notif' : (context) => NotificationPage(), 
       },
     );
   }
