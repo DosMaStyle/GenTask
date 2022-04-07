@@ -1,4 +1,3 @@
-import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 
 class AuthPage extends StatefulWidget {
@@ -61,7 +60,7 @@ class _AuthPageState extends State<AuthPage> {
 
     final loginButton = Material(
       borderRadius: BorderRadius.circular(7.0),
-      color: Color(0xff666666),
+      color: Color(0xff005595),
       child: MaterialButton(
         minWidth: MediaQuery.of(context).size.width,
         padding: EdgeInsets.fromLTRB(20.0, 15.0, 20.0, 15.0),
@@ -78,12 +77,23 @@ class _AuthPageState extends State<AuthPage> {
 
     return Scaffold(
       appBar: AppBar(
+        bottom: PreferredSize(
+            child: Container(
+              color: Color(0xffAEC8D6),
+              height: 1.0,
+              margin: EdgeInsets.symmetric(
+                horizontal: 15.0,
+              ),
+            ),
+            preferredSize: Size.fromHeight(4.0)),
+        elevation: 0,
         title: Text('Sancor',
           style: TextStyle(
+            color: Color(0xff005595),
             fontSize: 35,
           ),
         ),
-        backgroundColor: Color(0xff606060),
+        backgroundColor: Color(0xfffefefe),
         toolbarHeight: 75.0,
       ),
       body: Center(

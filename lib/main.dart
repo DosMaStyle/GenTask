@@ -17,7 +17,7 @@ class MyApp extends StatelessWidget {
       routes: { //Навигация
         '/auth': (context) => AuthPage(),
         '/connect': (context) => ConnectPage(),
-        '/notif' : (context) => NotificationPage(), 
+        '/notif' : (context) => NotificationPage(),
       },
     );
   }
