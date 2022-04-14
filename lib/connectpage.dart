@@ -70,6 +70,7 @@ class ConnectPage extends StatelessWidget {
                 child: Text('Сопрячь',
                 style: TextStyle(
                   color: Color(0xfff8f8f8),
+                  fontSize: 22.0,
                 ),),
             ),
         ),
