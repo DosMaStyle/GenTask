@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:huawei_health/huawei_health.dart';
 import 'package:flutter/services.dart';
 import 'authpage.dart';
 import 'connectpage.dart';

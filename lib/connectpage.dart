@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:hp_mobile/main.dart';
+import 'icons.dart';
 
 class ConnectPage extends StatelessWidget {
 
@@ -25,26 +27,42 @@ class ConnectPage extends StatelessWidget {
         backgroundColor: Color(0xfffefefe),
         toolbarHeight: 75.0,
         actions: <Widget>[
-          TextButton(
-            style: TextButton.styleFrom(primary: Theme.of(context).colorScheme.onPrimary),
+          IconButton(
+            //style: TextButton.styleFrom(primary: Theme.of(context).colorScheme.onPrimary),
             onPressed: () {
               Navigator.pushNamed(context, '/notif');
             },
-            child: Text('Not',
-            style: TextStyle(
-              color: Colors.blue,
-            ),),
+            icon: Icon(MyFlutterApp.notification, color: Color(0xff005595),size: 30,),
           ),
-          TextButton(
-            style: TextButton.styleFrom(primary: Theme.of(context).colorScheme.onPrimary),
+          Container(
+            height: 30.0,
+
+            //borderRadius: BorderRadius.circular(7.0),
+            color: Color(0xff005595),
+            child: MaterialButton(
+
+            //minWidth: MediaQuery.of(context).size.width,
+            padding: EdgeInsets.fromLTRB(20.0, 15.0, 20.0, 15.0),
             onPressed: () {
               Navigator.pushReplacementNamed(context, '/auth');
             },
-            child: Text('Выйти',
-            style: TextStyle(
-              color: Colors.blue,
-            ),),
-          ),
+              child: Text("Выйти",
+                style: TextStyle(fontSize: 25.0, color: Colors.white),
+              textAlign: TextAlign.center,
+                          ),
+                     ),
+              ),
+
+          // TextButton(
+          //   style: TextButton.styleFrom(primary: Theme.of(context).colorScheme.onPrimary),
+          //   onPressed: () {
+          //     Navigator.pushReplacementNamed(context, '/auth');
+          //   },
+          //   child: Text('Выйти',
+          //   style: TextStyle(
+          //     color: Colors.blue,
+          //   ),),
+          // ),
         ],
       ),
       body: Column(
