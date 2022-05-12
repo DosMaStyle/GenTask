@@ -62,6 +62,23 @@ flutter:
     - family: MyFlutterApp # the name of your font family
       fonts:
         - asset: assets/MyFlutterApp.ttf
+    - family: Lato
+      fonts:
+        - asset: assets/Lato-Bold.ttf
+          style: normal
+        - asset: assets/Lato-Regular.ttf
+          style: normal
+    - family: Roboto
+      fonts:
+        - asset: assets/Roboto-Bold.ttf
+          style: normal
+          weight: 600
+        - asset: assets/Roboto-Light.ttf
+          style: normal
+        - asset: assets/Roboto-Medium.ttf
+          style: normal
+        - asset: assets/Roboto-Regular.ttf
+          style: normal
 
   # To add assets to your application, add an assets section, like this:
   # assets:

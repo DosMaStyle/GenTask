@@ -51,7 +51,6 @@ class _AuthPageState extends State<AuthPage> {
           contentPadding: EdgeInsets.fromLTRB(12.0, 10.0, 20.0, 10.0),
           hintText: "Введите пароль",
           hintStyle: TextStyle( fontSize: 18.0,
-              fontWeight: FontWeight.bold,
               color: Color(0xffc4c4c4)),
           border:
           OutlineInputBorder(borderRadius: BorderRadius.circular(7.0))),
@@ -108,7 +107,9 @@ class _AuthPageState extends State<AuthPage> {
                 SizedBox(height: 45.0,),
                 SizedBox(
                   child: Text('Авторизация',
-                  style: TextStyle(fontSize: 24,
+                  style: TextStyle(
+                    fontFamily: 'Roboto',
+                    fontSize: 24,
                   fontWeight: FontWeight.bold),
                   ),
                 ),

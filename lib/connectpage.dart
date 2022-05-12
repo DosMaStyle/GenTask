@@ -35,14 +35,20 @@ class ConnectPage extends StatelessWidget {
             icon: Icon(MyFlutterApp.notification, color: Color(0xff005595),size: 30,),
           ),
           Container(
-            height: 30.0,
+            margin: EdgeInsets.symmetric(
+                vertical: 14.0,
+                horizontal: 12.0),
+            //height: 30,
 
             //borderRadius: BorderRadius.circular(7.0),
-            color: Color(0xff005595),
-            child: MaterialButton(
 
+            child: Material(
+                color: Color(0xff005595),
+                borderRadius: BorderRadius.circular(7.0),
+                child: MaterialButton(
+            //height: 30,
             //minWidth: MediaQuery.of(context).size.width,
-            padding: EdgeInsets.fromLTRB(20.0, 15.0, 20.0, 15.0),
+            //padding: EdgeInsets.fromLTRB(20.0, 15.0, 20.0, 15.0),
             onPressed: () {
               Navigator.pushReplacementNamed(context, '/auth');
             },
@@ -50,7 +56,7 @@ class ConnectPage extends StatelessWidget {
                 style: TextStyle(fontSize: 25.0, color: Colors.white),
               textAlign: TextAlign.center,
                           ),
-                     ),
+                     )),
               ),
 
           // TextButton(
