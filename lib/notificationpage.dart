@@ -13,7 +13,7 @@ class _NotificationPageState extends State<NotificationPage> {
   @override
   void initState() {
     super.initState();
-    notif_cnt.addAll(['Odin','Dvaa12332','trie']);
+    notif_cnt.addAll(['12.05.2022 14:27','12.05.2022 13:15','12.05.2022 12:45']);
   }
 
   @override
@@ -77,18 +77,19 @@ class _NotificationPageState extends State<NotificationPage> {
           ),
         ],
       ),
-      body: ListView.builder(
+      body:ListView.separated(
+        separatorBuilder: (BuildContext context, int index) => Divider(height: 10,
+        color: Colors.transparent),
         itemCount: notif_cnt.length,
+        padding: EdgeInsets.symmetric(vertical: 20, horizontal: 15),
         itemBuilder: (BuildContext context, int index) {
           return Dismissible(
               key: Key(notif_cnt[index]),
               child: Material(
                 color: Colors.white,
                 elevation: 5,
-
                 borderRadius: BorderRadius.circular(12.0),
                   child: Container(
-                    //padding: EdgeInsets.fromLTRB(27.0,0,0,27.0),
                     height: 90.0,
 
 
@@ -96,7 +97,7 @@ class _NotificationPageState extends State<NotificationPage> {
                       color: Colors.white,
                       elevation: 0,
                       child: ListTile(title: Text(notif_cnt[index]),
-                      subtitle: Text("dfghgnhgnfds", style: TextStyle(
+                      subtitle: Text("\nУ вас высокая чсс (>130). Возможно, вам следует отдохнуть.", style: TextStyle(
                         color: Colors.black,
 
                       ),),),

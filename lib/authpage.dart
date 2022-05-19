@@ -36,7 +36,6 @@ class _AuthPageState extends State<AuthPage> {
           contentPadding: EdgeInsets.fromLTRB(12.0, 10.0, 20.0, 10.0),
           hintText: "Введите электронную почту",
           hintStyle: TextStyle( fontSize: 18.0,
-          fontWeight: FontWeight.bold,
           color: Color(0xffc4c4c4)),
           border:
           OutlineInputBorder(borderRadius: BorderRadius.circular(7.0))),
@@ -97,7 +96,7 @@ class _AuthPageState extends State<AuthPage> {
       ),
       body: Center(
         child: Container(
-          color: Colors.white,
+          //color: Color(0xfffefefe),
           child: Padding(
             padding: const EdgeInsets.all(35.0),
             child: Column(
